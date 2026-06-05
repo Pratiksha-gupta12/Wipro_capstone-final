@@ -4,19 +4,16 @@ export class WishlistPage {
 
         this.page = page;
 
-        // Categories
         this.booksCategory =
             page.getByRole('link', { name: 'Books' }).first();
 
-        // Product
+        
         this.firstProduct =
     page.locator('a[href="/computing-and-internet"]').last();
 
-        // Product Details Page
    this.addToWishlistButton =
     page.locator('input[value="Add to wishlist"]');
 
-        // Wishlist
         this.wishlistLink =
             page.locator('.header-links .ico-wishlist').first();
 
@@ -29,7 +26,6 @@ export class WishlistPage {
         this.emptyWishlistMessage =
             page.locator('.wishlist-content');
 
-        // Success Notification
         this.successNotification =
             page.locator('.bar-notification.success');
     }

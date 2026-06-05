@@ -3,13 +3,11 @@ export class ProductPage {
     constructor(page) {
         this.page = page;
 
-        // Books Page
         this.computingAndInternetLink =
 page.locator('.product-title a')
     .filter({ hasText: 'Computing and Internet' })
     .first();
 
-        // Product Details Page
         this.productTitle = page.locator('h1');
 
 this.productPrice = page.locator('.product-price');

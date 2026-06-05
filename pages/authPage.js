@@ -41,12 +41,12 @@ this.recoveryResult = page.locator('.result');
 this.loginErrorMessage = page.locator('.validation-summary-errors');
 this.accountEmail = page.locator('.account');
 
-// Forgot Password
+
 this.forgotPasswordLink = page.locator('.forgot-password a');
 this.recoveryEmail = page.locator('#Email');
 this.recoverButton = page.locator('input[value="Recover"]');
 
-// Recovery Messages
+
 this.recoveryResult = page.locator('.result');
 this.emailError = page.locator('span[for="Email"]');
     }

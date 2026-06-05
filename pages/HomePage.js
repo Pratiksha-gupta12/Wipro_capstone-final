@@ -4,17 +4,16 @@ export class HomePage {
     constructor(page) {
         this.page = page;
 
-        // UI Elements
         this.logo = page.locator('.header-logo');
         this.footer = page.locator('.footer');
 
-        // Header Navigation
+
         this.registerLink = page.locator('.ico-register');
         this.loginLink = page.locator('.ico-login');
         this.cartLink = page.locator('.cart-label');
         this.wishlistLink = page.locator('.wishlist-label');
 
-        // Categories
+        
         this.booksCategory =
     page.getByRole('link', { name: 'Books' }).first();
 
@@ -30,7 +29,7 @@ this.cartLink =
 this.wishlistLink =
     page.locator('.header-links .ico-wishlist').first();
 
- // Content Validation
+
 this.featuredProductsSection = page.locator('.product-grid');
 this.productCards = page.locator('.product-item');
 this.productNames = page.locator('.product-title');
