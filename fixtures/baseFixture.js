@@ -7,6 +7,7 @@ import { CheckoutPage } from '../pages/CheckoutPage';;
 import { CartPage } from '../pages/CartPage';
 import { WishlistPage } from '../pages/WishlistPage';
 import { CustomerSupportPage } from '../pages/CustomerSupportPage';
+import { ApiPage } from '../pages/ApiPage';
 
 export const test = base.extend({
 
@@ -36,6 +37,10 @@ export const test = base.extend({
 customerSupportPage: async ({ page }, use) => {
     await use(new CustomerSupportPage(page));
 },
+
+  apiPage: async ({ request }, use) => {
+        await use(new ApiPage(request));
+    }
 
 });
 
